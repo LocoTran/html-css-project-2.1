@@ -75,9 +75,19 @@ a {
 }
 
 .header .navbar a {
+    display: inline-block;
     margin-right: 39px;
     color: #2f3a3b;
     font-size: 1.6rem;
+}
+
+.header .navbar a::before {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .header .navbar a.active {
@@ -136,7 +146,7 @@ a {
 .hero .desc {
     margin-top: 46px;
     width: 374px;
-    color: #9da6a5;
+    color: var(--second-color);
     font-size: 1.8rem;
     line-height: 1.78;
 }
