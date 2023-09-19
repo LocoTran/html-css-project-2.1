@@ -637,12 +637,6 @@ a {
     display: flex;
 }
 
-.footer .title {
-    color: #2e2e2e;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
 .footer li {
     display: block;
     margin-bottom: 18px;
@@ -662,6 +656,17 @@ a {
 
 .footer .column:nth-child(4) {
     margin-right: 137px;
+}
+
+.footer .column a {
+    color: #535353;
+    font-size: 1.6rem;
+}
+
+.footer .column a.title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .footer .column.social a {
